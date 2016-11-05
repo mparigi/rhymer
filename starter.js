@@ -4,7 +4,7 @@ var port = 3000;
 
 
 app.get("/", function(req, res) {
-	res.send("yeet");
+	res.sendFile('index.html', { root: __dirname });
 });
 
 app.listen(port);
