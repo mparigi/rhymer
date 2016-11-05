@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rhymer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link rel="stylesheet" href="master.css">
+  </head>
+  <body>
+    <div>
+      <div class="row">
+        <div class="col s10">
+          <div class="container">
+            <div class="card indigo darken-1">
+              <div class="card-content white-text container">
+                <span class="card-title">Rhymer</span>
+                <form id="subForm">
+                  <input type="text" name="selWord" placeholder="Enter word here!"/>
+                  How fast should the words show up?
+                  <p class="range-field"><input type="range" min="1" max="10" step="1" name="speed"/></p>
+                  <input type="submit" value="START" class="waves-effect waves-light btn"/>
+                </form>
+                <p id="disp"></p>
+              </div>
+              <div class="card-action">
+                <div class="container">
+                  <audio src="http://killatune.com/freenonexbeats/freebeat2.mp3" preload="auto" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s2 purple" id="sidePanel"></div>
+      </div>
+    </div>
+
+  </body>
+  <script src="audiojs/audio.min.js" charset="utf-8"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+  <script>
+    audiojs.events.ready(function() {
+      var as = audiojs.createAll();
+    });
+  </script>
+  <script src="script.js" charset="utf-8"></script>
+</html>
