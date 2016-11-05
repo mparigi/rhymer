@@ -1,0 +1,23 @@
+{
+  "name": "Rhymer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "starter.js",
+  "scripts": {
+    "start": "node starter.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mparigi/rhymer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mparigi/rhymer/issues"
+  },
+  "homepage": "https://github.com/mparigi/rhymer#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
