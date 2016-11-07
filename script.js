@@ -3,7 +3,7 @@ $("#subForm").submit(function (ev) {
   ev.preventDefault();
   var w = ev.target.elements.selWord.value;
   var s = (-4700/9)*(ev.target.elements.speed.value) + (5522);
-  $.getJSON("http://rhymebrain.com/talk?function=getRhymes&word=" + w, function(data) {
+  $.getJSON("https://rhymebrain.com/talk?function=getRhymes&word=" + w, function(data) {
     for (var i = 0; i < 100; i++) window.clearInterval(i); //TERRIBLE
     var words = data.filter(function(l){
       return l.word.length > 2 && l.flags === "bc" && l.freq > 18;
